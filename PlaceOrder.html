@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Place Order</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Yohan<span class="text-danger">S</span></a>
+        <button aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-bs-target="#navbarTogglerDemo02" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="ManageCustomer.html">Manage Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="ManageItem.html">Manage Item</a>
+                </li>
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active text-danger" href="PlaceOrder.html">PlaceOrder</a>
+                </li>
+
+            </ul>
+            <form class="d-flex">
+                <input aria-label="Search" class="form-control me-2" placeholder="Search" type="search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<section class="container-fluid" id="placeOrderSection">
+    <article class="row mb-2 mt-2">
+        <div class="row">
+            <div class="col-12 col-sm-2 col-md-2 col-lg-2 col-xl-2 col-xxl-1">
+                <h5>Order ID</h5>
+            </div>
+            <div class="col ">
+                <h5>O001</h5>
+            </div>
+        </div>
+    </article>
+    <section class="row">
+        <article class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+            <!--            <div class="form-floating mb-3">-->
+            <!--                -->
+            <!--            </div>-->
+
+            <!--            <div class="dropdown">-->
+            <!--                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"-->
+            <!--                   data-bs-toggle="dropdown" aria-expanded="false">-->
+            <!--                    Dropdown link-->
+            <!--                </a>-->
+
+            <!--                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">-->
+            <!--                    <li><a class="dropdown-item" href="#">Action</a></li>-->
+            <!--                    <li><a class="dropdown-item" href="#">Another action</a></li>-->
+            <!--                    <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+            <!--                </ul>-->
+            <!--            </div>-->
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="customerName" placeholder="name@example.com">
+                <label for="customerName">Customer Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="customerAddress" placeholder="name@example.com">
+                <label for="customerAddress">Customer address</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control " id="emailAddress" placeholder="name@example.com">
+                <label for="emailAddress">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control " id="phoneNumber" placeholder="name@example.com">
+                <label for="phoneNumber">Phone No</label>
+            </div>
+        </article>
+        <article class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="itemName" placeholder="name@example.com">
+                <label for="itemName">Item Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control " id="itemDescription" placeholder="name@example.com">
+                <label for="itemDescription">Item Description</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="itemPrice" placeholder="name@example.com">
+                <label for="itemPrice">Item Price</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control " id="qty" placeholder="name@example.com">
+                <label for="qty">Quantity on hand</label>
+            </div>
+        </article>
+        <article class="col" id="placeOrderItemTable">
+            <div class="border" style="height: 280px; overflow: auto;">
+                <table class="table table-hover">
+                    <thead class="bg-dark text-white">
+                    <tr>
+                        <th scope="col">Item ID</th>
+                        <th scope="col">Item Name</th>
+                        <th scope="col">Item Price</th>
+                        <th scope="col">QTY</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">I001</th>
+                        <td>Mark</td>
+                        <td>1200</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I001</th>
+                        <td>Mark</td>
+                        <td>1200</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I001</th>
+                        <td>Mark</td>
+                        <td>1200</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I001</th>
+                        <td>Mark</td>
+                        <td>1200</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I001</th>
+                        <td>Mark</td>
+                        <td>1200</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I001</th>
+                        <td>Mark</td>
+                        <td>1200</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I001</th>
+                        <td>Mark</td>
+                        <td>1200</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I001</th>
+                        <td>Mark</td>
+                        <td>1200</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I001</th>
+                        <td>Mark</td>
+                        <td>1200</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I001</th>
+                        <td>Mark</td>
+                        <td>1200</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">I001</th>
+                        <td>Mark</td>
+                        <td>1200</td>
+                        <td>2</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        <section class="row">
+            <article class="col">
+                <button type="button" class="btn btn-success">Place Order</button>
+                <button type="button" class="btn btn-danger">Cancel Order</button>
+            </article>
+        </section>
+    </section>
+</section>
+
+<script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
